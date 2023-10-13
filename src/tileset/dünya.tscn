@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dygpdnfb2dfc8"]
+
+[sub_resource type="TileSet" id="TileSet_66yti"]
+tile_shape = 3
+
+[node name="dünya" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_66yti")
+format = 2
