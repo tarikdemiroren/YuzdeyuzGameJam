@@ -2,6 +2,10 @@ extends Node2D
 
 @onready var tileArray = []
 @onready var tileMap = $TileMap
+@onready var objectPool = []
+
+@onready var mynode = preload("res://src/cards/player/unit_cards/KoyAgasi.tscn")
+var mynode_path = "res://src/cards/player/unit_cards/KoyAgasi.tscn" 
 
 func _ready(): 
 	for i in range(12): #basic tile
@@ -18,9 +22,24 @@ func _ready():
 		tileMap.set_cell(0, i, 0,tileArray[counter])
 		counter = counter + 1
 	
+	addObjectToPool(Vector2(-1,-1))
+	addObjectToPool(Vector2(1,1))
+		
+	
+	
 
 func _input(event):
 	if Input.is_action_just_pressed("click"):
 		var clicked_cell = tileMap.local_to_map(tileMap.get_local_mouse_position())
 
+
+func addObjectToPool( vector = Vector2(0,0) ):
+	var pos = tileMap.map_to_local(vector)
+	var globpos = $TileMap.to_global(pos)
+	var instance = mynode.instantiate()
+	instance.position = globpos
+	objectPool.append(instance)
+	add_child(instance)
+	
+	
 
