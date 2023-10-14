@@ -1,21 +1,27 @@
-[gd_scene load_steps=9 format=3 uid="uid://dygpdnfb2dfc8"]
+[gd_scene load_steps=12 format=3 uid="uid://dygpdnfb2dfc8"]
 
 [ext_resource type="Script" path="res://src/tileset/dünya.gd" id="1_mnf41"]
 [ext_resource type="Texture2D" uid="uid://cte6jxywllupx" path="res://src/assets/dark-tileset.png" id="3_2idhr"]
 [ext_resource type="Texture2D" uid="uid://chdqwt22hfc1d" path="res://src/assets/tiles.png" id="3_g45rd"]
 [ext_resource type="Texture2D" uid="uid://wqvk2awf4nsh" path="res://src/assets/fogRed.png" id="3_rhcrj"]
+[ext_resource type="Texture2D" uid="uid://cc1h04h1v1tnd" path="res://src/assets/villagerSprite.png" id="5_bpqx4"]
+[ext_resource type="Texture2D" uid="uid://cvh7qylffvjv7" path="res://src/assets/kagniDriver.png" id="6_t0qqe"]
+[ext_resource type="Texture2D" uid="uid://dshgcmc2ml105" path="res://src/assets/farmetSprite.png" id="7_qa3kg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qhsuo"]
 texture = ExtResource("3_g45rd")
 texture_region_size = Vector2i(50, 50)
 4:0/size_in_atlas = Vector2i(4, 4)
 4:0/0 = 0
+4:0/0/modulate = Color(0.352941, 0.462745, 0.545098, 1)
 8:0/size_in_atlas = Vector2i(4, 4)
 8:0/0 = 0
+8:0/0/modulate = Color(0.662745, 0.45098, 0.188235, 1)
 12:0/size_in_atlas = Vector2i(4, 4)
 12:0/0 = 0
 0:0/size_in_atlas = Vector2i(4, 4)
 0:0/0 = 0
+0:0/0/modulate = Color(0.254902, 0.509804, 0.458824, 1)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_41l7l"]
 texture = ExtResource("3_2idhr")
@@ -50,7 +56,7 @@ texture_region_size = Vector2i(200, 200)
 texture = ExtResource("3_rhcrj")
 texture_region_size = Vector2i(200, 200)
 0:0/0 = 0
-0:0/0/modulate = Color(0, 0.27451, 0.501961, 1)
+0:0/0/modulate = Color(0, 0.121569, 0.243137, 1)
 
 [sub_resource type="TileSet" id="TileSet_66yti"]
 tile_size = Vector2i(200, 200)
@@ -89,3 +95,43 @@ layer_3/y_sort_enabled = false
 layer_3/y_sort_origin = 0
 layer_3/z_index = -100
 layer_3/tile_data = PackedInt32Array(-262152, 17, 0, -196616, 17, 0, -131080, 17, 0, -65544, 17, 0, -8, 17, 0, 65528, 17, 0, 131064, 17, 0, 196600, 17, 0, 262136, 17, 0, 327672, 17, 0, -262151, 17, 0, -196615, 17, 0, -131079, 17, 0, -65543, 17, 0, -7, 17, 0, 65529, 17, 0, 131065, 17, 0, 196601, 17, 0, 262137, 17, 0, 327673, 17, 0, -262150, 17, 0, -196614, 17, 0, -131078, 17, 0, -65542, 17, 0, -6, 17, 0, 65530, 17, 0, 131066, 17, 0, 196602, 17, 0, 262138, 17, 0, 327674, 17, 0, -262149, 17, 0, -196613, 17, 0, -131077, 17, 0, -65541, 17, 0, -5, 17, 0, 65531, 17, 0, 131067, 17, 0, 196603, 17, 0, 262139, 17, 0, 327675, 17, 0, -262148, 17, 0, -196612, 17, 0, -131076, 17, 0, -65540, 17, 0, -4, 17, 0, 65532, 17, 0, 131068, 17, 0, 196604, 17, 0, 262140, 17, 0, 327676, 17, 0, -262147, 17, 0, -196611, 17, 0, -131075, 17, 0, -65539, 17, 0, -3, 17, 0, 65533, 17, 0, 131069, 17, 0, 196605, 17, 0, 262141, 17, 0, 327677, 17, 0, -262146, 17, 0, -196610, 17, 0, -131074, 17, 0, -65538, 17, 0, -2, 17, 0, 65534, 17, 0, 131070, 17, 0, 196606, 17, 0, 262142, 17, 0, 327678, 17, 0, -262145, 17, 0, -196609, 17, 0, -131073, 17, 0, -65537, 17, 0, -1, 17, 0, 65535, 17, 0, 131071, 17, 0, 196607, 17, 0, 262143, 17, 0, 327679, 17, 0, -327680, 17, 0, -262144, 17, 0, -196608, 17, 0, -131072, 17, 0, -65536, 17, 0, 0, 17, 0, 65536, 17, 0, 131072, 17, 0, 196608, 17, 0, 262144, 17, 0, -327679, 17, 0, -262143, 17, 0, -196607, 17, 0, -131071, 17, 0, -65535, 17, 0, 1, 17, 0, 65537, 17, 0, 131073, 17, 0, 196609, 17, 0, 262145, 17, 0, -327678, 17, 0, -262142, 17, 0, -196606, 17, 0, -131070, 17, 0, -65534, 17, 0, 2, 17, 0, 65538, 17, 0, 131074, 17, 0, 196610, 17, 0, 262146, 17, 0, -327677, 17, 0, -262141, 17, 0, -196605, 17, 0, -131069, 17, 0, -65533, 17, 0, 3, 17, 0, 65539, 17, 0, 131075, 17, 0, 196611, 17, 0, 262147, 17, 0, -327676, 17, 0, -262140, 17, 0, -196604, 17, 0, -131068, 17, 0, -65532, 17, 0, 4, 17, 0, 65540, 17, 0, 131076, 17, 0, 196612, 17, 0, 262148, 17, 0, -327675, 17, 0, -262139, 17, 0, -196603, 17, 0, -131067, 17, 0, -65531, 17, 0, 5, 17, 0, 65541, 17, 0, 131077, 17, 0, 196613, 17, 0, 262149, 17, 0, -327674, 17, 0, -262138, 17, 0, -196602, 17, 0, -131066, 17, 0, -65530, 17, 0, 6, 17, 0, 65542, 17, 0, 131078, 17, 0, 196614, 17, 0, 262150, 17, 0, -327673, 17, 0, -262137, 17, 0, -196601, 17, 0, -131065, 17, 0, -65529, 17, 0, 7, 17, 0, 65543, 17, 0, 131079, 17, 0, 196615, 17, 0, 262151, 17, 0)
+
+[node name="VillagerSprite" type="Sprite2D" parent="."]
+position = Vector2(536, 366)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("5_bpqx4")
+
+[node name="VillagerSprite2" type="Sprite2D" parent="."]
+position = Vector2(696, 448)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("5_bpqx4")
+
+[node name="VillagerSprite3" type="Sprite2D" parent="."]
+position = Vector2(695, 206)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("5_bpqx4")
+
+[node name="VillagerSprite4" type="Sprite2D" parent="."]
+position = Vector2(536, 205)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("5_bpqx4")
+
+[node name="KagniDriver" type="Sprite2D" parent="."]
+position = Vector2(615, 443)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("6_t0qqe")
+
+[node name="KagniDriver2" type="Sprite2D" parent="."]
+position = Vector2(695, 285)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("6_t0qqe")
+
+[node name="FarmetSprite" type="Sprite2D" parent="."]
+position = Vector2(458, 446)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("7_qa3kg")
+
+[node name="FarmetSprite2" type="Sprite2D" parent="."]
+position = Vector2(457, 286)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("7_qa3kg")

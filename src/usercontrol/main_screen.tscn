@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxo1asuvfensb"]
+
+[ext_resource type="Script" path="res://src/usercontrol/MainScreen.gd" id="1_bnyo6"]
+
+[node name="MainScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bnyo6")
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.361
+anchor_top = 0.494
+anchor_right = 0.646
+anchor_bottom = 0.654
+offset_left = -7.87204
+offset_top = -6.11201
+offset_right = -0.192032
+offset_bottom = 0.207972
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="StartGame" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 23
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Settings"
+
+[node name="ExitGame" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Quit"
+
+[node name="SettingsPanel" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.445
+anchor_top = 0.469
+anchor_right = 0.556
+anchor_bottom = 0.556
+offset_left = 0.359974
+offset_top = -0.912008
+offset_right = -0.512062
+offset_bottom = 8.71197
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FullscreenButton" type="CheckButton" parent="SettingsPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Fullscreen"
+
+[node name="ExitSettings" type="Button" parent="SettingsPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Exit Settings"
+
+[connection signal="pressed" from="Buttons/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Buttons/ExitGame" to="." method="_on_exit_game_pressed"]
+[connection signal="toggled" from="SettingsPanel/FullscreenButton" to="." method="_on_fullscreen_button_toggled"]
+[connection signal="pressed" from="SettingsPanel/ExitSettings" to="." method="_on_exit_settings_pressed"]

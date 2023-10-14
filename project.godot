@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="DuzensizOrdu"
-run/main_scene="res://src/tileset/dünya.tscn"
+run/main_scene="res://src/usercontrol/main_screen.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
+window/handheld/orientation=1
 
 [input]
 
