@@ -1,13 +1,9 @@
-extends Cards
+extends Node
 
-class_name Koylu
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	info = "Çiftçi çoban ve kağnı sürücüsünün bütün yaptığı şeyleri yapabilir."
-	attackPower = 1
-	health = 8
-	rarity = Rareness.LEGENDARY
+	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
