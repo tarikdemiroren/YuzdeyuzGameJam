@@ -1,11 +1,11 @@
-extends Cards
+extends UnitCards
 
-class_name Tufekci
+class_name CocukAsker
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	info = "Menzilli Birlik. Düşük Hasar Verir."
-	attackPower = 2
+	info = "İstediğin bir asker ile yerini değiştir"
+	attackPower = 0
 	health = 5
 	rarity = Rareness.ORDINARY
 

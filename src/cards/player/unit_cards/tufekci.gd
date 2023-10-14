@@ -1,14 +1,13 @@
-extends Cards
+extends UnitCards
 
-class_name Istihbaratcı
-
+class_name Tufekci
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	info = "Önceki turdaki asker ile şimdiki askere +1 saldırı güçlendirir"
-	attackPower = 1
-	health = 6
-	rarity = Rareness.RARE
+	info = "Menzilli Birlik. Düşük Hasar Verir."
+	attackPower = 2
+	health = 5
+	rarity = Rareness.ORDINARY
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

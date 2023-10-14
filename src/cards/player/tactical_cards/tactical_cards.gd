@@ -1,6 +1,6 @@
 extends Node2D
 
-class_name Cards
+class_name TacticalCards
 
 var cardSprite: Sprite2D
 var classIcon: Sprite2D 
