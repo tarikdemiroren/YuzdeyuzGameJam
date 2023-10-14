@@ -10,12 +10,24 @@ var attackPower: int
 var health: int
 enum Rareness {LEGENDARY, RARE, ORDINARY}
 var rarity: Rareness
+var mapPositions
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func _ready() -> void:
+	set_health_label()
+	
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func takeDamage(damage):
+	if health > damage:
+		health = health - damage
+	else:
+		self.queue_free()
+		
+func attackCharacters():
 	pass
+	
+func setMapPosition(pos) -> void:
+	mapPositions = pos
+
+func set_health_label() -> void:
+	$HealthLabel.text = "%s" % health
+	

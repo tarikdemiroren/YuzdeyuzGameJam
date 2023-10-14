@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1kpwims1pmgx"]
+
+[ext_resource type="Texture2D" uid="uid://de1xsogismaqr" path="res://src/assets/Health_03.png" id="1_foiku"]
+[ext_resource type="Texture2D" uid="uid://ecvpauwq8ng3" path="res://src/assets/health_bar.png" id="2_1lf02"]
+
+[node name="Health" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.67148, 0.598543)
+
+[node name="HealthBarWrapper" type="Sprite2D" parent="."]
+position = Vector2(97, 24)
+texture = ExtResource("1_foiku")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 210.0
+offset_bottom = 48.0
+max_value = 20.0
+value = 20.0
+texture_progress = ExtResource("2_1lf02")
