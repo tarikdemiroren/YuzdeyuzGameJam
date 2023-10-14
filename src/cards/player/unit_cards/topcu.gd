@@ -3,10 +3,10 @@ extends UnitCards
 class_name Topcu
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
+func _init():
 	info = "Menzilli Birlik. Yüksek Hasar Verir."
-	attackPower = 8
-	health = 14
+	base_atk = 8
+	max_health = 14
 	rarity = Rareness.RARE
 
 
