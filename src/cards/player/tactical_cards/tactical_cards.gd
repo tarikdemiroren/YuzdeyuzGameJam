@@ -1,15 +1,13 @@
 extends Node2D
 
-class_name TacticalCards
+class_name TacticalCard
 
 var cardSprite: Sprite2D
 var classIcon: Sprite2D 
 var selfIcon: Sprite2D
 var info: String
-var attackPower: int
-var health: int
-enum Rareness {LEGENDARY, RARE, ORDINARY}
-var rarity: Rareness
+enum Rarity {LEGENDARY, RARE, COMMON}
+var rarity: Rarity
 
 
 func _init():

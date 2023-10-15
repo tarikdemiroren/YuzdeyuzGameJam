@@ -1,16 +1,18 @@
-extends UnitCards
+extends AtakBirlik
 
 class_name Efe
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	info = "Öldürdüğü asker başına saldırı gücü +1"
-	attackPower = 2
-	health = 8
-	rarity = Rareness.RARE
-	
+func _init():
+	super._init()
+	info = "Öldürdüğü asker başına saldırı gücü 1 artar."
+	base_atk = 2
+	base_rng = 1
+	max_health = 5
+	needforfood = 1
+	rarity = Rarity.RARE
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func attack( target : UnitCards ):
+	# animation or shit idk
+	if target.take_damage(damage):
+		base_atk += 1

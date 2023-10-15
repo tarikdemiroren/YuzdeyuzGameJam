@@ -1,15 +1,24 @@
-extends UnitCards
+extends AtakBirlik
 
 class_name Koylu
 
+var aga_counter : int
+
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	info = "Çiftçi çoban ve kağnı sürücüsünün bütün yaptığı şeyleri yapabilir."
-	attackPower = 1
-	health = 8
-	rarity = Rareness.LEGENDARY
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _init():
+	super._init()
+	info = "7 turun sonunda [Ağa] olarak geri döner."
+	base_atk = 1
+	base_rng = 1
+	max_health = 7
+	needforfood = 1
+	rarity = Rarity.COMMON
+	
+	aga_counter = 7	
+	
+func tour_end():
+	super.tour_end()
+	aga_counter -= 1
+	if aga_counter <= 0:
+		isDefeated = true
+		
