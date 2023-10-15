@@ -4,8 +4,7 @@ extends Node2D
 @onready var tileMap = $TileMap
 @onready var objectPool = []
 
-@onready var mynode = preload("res://src/cards/player/unit_cards/KoyAgasi.tscn")
-var mynode_path = "res://src/cards/player/unit_cards/KoyAgasi.tscn" 
+@onready var mynode = preload("res://src/cards/player/unit_cards/aga.tscn")
 
 func _ready(): 
 	for i in range(12): #basic tile
