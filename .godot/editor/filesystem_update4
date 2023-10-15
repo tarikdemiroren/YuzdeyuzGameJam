@@ -1,2 +1,12 @@
-res://src/tileset/dünya.tscn
+res://src/cards/player/scene/control.tscn
 res://src/tileset/dünya.gd
+<<<<<<< Updated upstream
+res://src/tileset/dünya.tscn
+res://src/cards/player/unit_cards/aga.tscn
+res://uiControl.gd
+=======
+res://uiControl.gd
+res://src/cards/player/unit_cards/KoyAgasi.tscn
+res://src/cards/player/scene/control.tscn
+res://src/cards/player/unit_cards/KoyAgasi.gd
+>>>>>>> Stashed changes

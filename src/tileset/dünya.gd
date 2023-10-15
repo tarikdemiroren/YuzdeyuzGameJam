@@ -3,9 +3,10 @@ extends Node2D
 @onready var tileArray = []
 @onready var tileMap = $TileMap
 @onready var objectPool = []
+@onready var control = $Control
 
-@onready var mynode = preload("res://src/cards/player/unit_cards/KoyAgasi.tscn")
-var mynode_path = "res://src/cards/player/unit_cards/KoyAgasi.tscn" 
+@onready var aga = preload("res://src/cards/player/unit_cards/KoyAgasi.tscn")
+var aga_path = "res://src/cards/player/unit_cards/KoyAgasi.tscn" 
 
 func _ready(): 
 	for i in range(12): #basic tile
@@ -24,8 +25,12 @@ func _ready():
 	
 	addObjectToPool(Vector2(-1,-1))
 	addObjectToPool(Vector2(1,1))
+<<<<<<< Updated upstream
 		
+	control.whenDrawed()
 	
+=======
+>>>>>>> Stashed changes
 	
 
 func _input(event):
@@ -36,10 +41,7 @@ func _input(event):
 func addObjectToPool( vector = Vector2(0,0) ):
 	var pos = tileMap.map_to_local(vector)
 	var globpos = $TileMap.to_global(pos)
-	var instance = mynode.instantiate()
+	var instance = aga.instantiate()
 	instance.position = globpos
 	objectPool.append(instance)
 	add_child(instance)
-	
-	
-
