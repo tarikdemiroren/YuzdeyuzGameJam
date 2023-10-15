@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< Updated upstream
-uid="uid://bywmf5xw623ck"
-=======
-uid="uid://bl7cme2bkvpjc"
->>>>>>> Stashed changes
-path="res://.godot/imported/commanderSprite.png-783b179704ee3e877fb1ab0a017885e0.ctex"
+uid="uid://c01mve3an7vf"
+path="res://.godot/imported/ünlem.jpg-6a33b5a942a79d5e7faba63c4b3355c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/assets/commanderSprite.png"
-dest_files=["res://.godot/imported/commanderSprite.png-783b179704ee3e877fb1ab0a017885e0.ctex"]
+source_file="res://src/assets/ünlem.jpg"
+dest_files=["res://.godot/imported/ünlem.jpg-6a33b5a942a79d5e7faba63c4b3355c6.ctex"]
 
 [params]
 

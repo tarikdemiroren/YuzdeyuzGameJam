@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dptduow1sb3dn"]
+[gd_scene load_steps=4 format=3 uid="uid://nq0762jf4yc"]
 
-[ext_resource type="Texture2D" uid="uid://da2myam3kiwx6" path="res://src/assets/villageAga.png" id="1_ccri0"]
+[ext_resource type="Texture2D" uid="uid://b4visu5o6cfu4" path="res://src/assets/villageAga.png" id="1_ccri0"]
 [ext_resource type="Script" path="res://src/cards/player/unit_cards/aga.gd" id="2_ilgfo"]
-[ext_resource type="PackedScene" uid="uid://b1kpwims1pmgx" path="res://src/cards/player/unit_cards/health.tscn" id="3_a5x6a"]
+[ext_resource type="PackedScene" path="res://src/cards/player/unit_cards/health.tscn" id="3_a5x6a"]
 
 [node name="KoyAgası" type="Sprite2D"]
 scale = Vector2(0.5, 0.5)

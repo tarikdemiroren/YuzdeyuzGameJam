@@ -1,17 +1,2 @@
-TextureRect
-<<<<<<< Updated upstream
-=======
-Node2D
-Label
-TextEdit
-TextureButton
-HBoxContainer
-TextureProgressBar
-ProgressBar
-Control
-CanvasLayer
->>>>>>> Stashed changes
 Sprite2D
-CenterContainer
-Container
 TileMap

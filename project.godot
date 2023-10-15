@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [display]
 
 window/stretch/mode="viewport"
-window/stretch/aspect="ignore"
 window/handheld/orientation=1
 
 [input]
@@ -31,8 +30,4 @@ click={
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=0
-<<<<<<< Updated upstream
 renderer/rendering_method="mobile"
-=======
->>>>>>> Stashed changes
